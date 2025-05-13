@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #47bfbf, #2a8c8c);
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: 200% 200%;
+  animation: gradient-shift 10s ease infinite;
+}
+
+.popa {
+  text-align: center;
+  padding: 20px;
+  font-size: 2.5rem;
+  color: white;
+  background: #47bfbf;
+  background-size: 200% auto;
+  animation: gradient-shift 3s infinite linear;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.formulas-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.formula-box {
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+  background-size: 200% 200%;
+  animation: gradient-shift 5s ease infinite;
+}
+
+.formula {
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+sub {
+  vertical-align: sub;
+  font-size: 0.6em;
+}
